@@ -3,7 +3,7 @@
 // The car dealer has all of their inventory housed in the array seen below.  Scroll down past the data to find out how you can help the car dealer.
 
 let inventory = [
-{"id":1,"car_make":"Lincoln","car_model":"Navigator","car_year":2009},
+{"id":1,"car_make":"Lincoln","car_model":"navigator","car_year":2009},
 {"id":2,"car_make":"Mazda","car_model":"Miata MX-5","car_year":2001},
 {"id":3,"car_make":"Land Rover","car_model":"Defender Ice Edition","car_year":2010},
 {"id":4,"car_make":"Honda","car_model":"Accord","car_year":1983},
@@ -85,8 +85,9 @@ console.log(inventory[lastCar]);
 let carModels = [];
 
 for (i = 0; i < inventory.length; i++) {
-    carModels.push(inventory[i].car_model);
+    carModels.push(inventory[i].car_model.toLowerCase());
 }
+console.log(carModels);
 carModels.sort();
 console.log(carModels);
 
