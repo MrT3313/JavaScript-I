@@ -19,7 +19,7 @@ const example = {
 
 // Write your intern objects here:
 
-  //create CUSTOMERS array
+  //create INTERNS array
   let INTERNS = [];
 
     //create first intern
